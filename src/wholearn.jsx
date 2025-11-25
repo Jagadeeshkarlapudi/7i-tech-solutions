@@ -3,6 +3,11 @@ import { FaHome, FaBriefcase, FaUserGraduate, FaMicrochip } from "react-icons/fa
 
 const WhoCanLearn = () => {
   const learners = [
+     {
+      icon: <FaUserGraduate />,
+      title: "Students",
+      desc: "Build your foundation in IT and get ready for future opportunities.",
+    },
     {
       icon: <FaHome />,
       title: "Housewives",
@@ -13,11 +18,7 @@ const WhoCanLearn = () => {
       title: "Working Professionals",
       desc: "Enhance your technical expertise and grow your career in IT.",
     },
-    {
-      icon: <FaUserGraduate />,
-      title: "Students",
-      desc: "Build your foundation in IT and get ready for future opportunities.",
-    },
+   
     {
       icon: <FaMicrochip />,
       title: "Non-IT Professionals",

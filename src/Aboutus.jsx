@@ -54,8 +54,8 @@ function Aboutus() {
               <motion.div className="stat-box1" initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}>
-                <h3 className="stat-number"><CountUp end={30} duration={2.5} />+</h3>
-                <p className="stat-text">Courses</p>
+                <h3 className="stat-number"><CountUp end={5} duration={2.5} />+</h3>
+                <p className="stat-text">Branches</p>
               </motion.div>
               </div>
 
@@ -63,8 +63,8 @@ function Aboutus() {
               <motion.div className="stat-box" initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}>
-                <h3 className="stat-number"><CountUp end={10} duration={2.5} />+</h3>
-                <p className="stat-text">Years Exp.</p>
+                <h3 className="stat-number"><CountUp end={5000} duration={2.5} />+</h3>
+                <p className="stat-text">Students</p>
               </motion.div>
             </div>
             </div>
@@ -73,8 +73,8 @@ function Aboutus() {
             <motion.div className="stat-box1 text-center" initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}>
-                <h3 className="stat-number"><CountUp end={10} duration={2.5} />+</h3>
-                <p className="stat-text">Years Exp.</p>
+                <h3 className="stat-number"><CountUp end={1000} duration={2.5} />+</h3>
+                <p className="stat-text">Placed</p>
               </motion.div>
               </div>
           </div>

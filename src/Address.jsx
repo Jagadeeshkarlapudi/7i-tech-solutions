@@ -8,15 +8,16 @@ const branches = [
     subtitle:"Head Office",
     address:
       "Sai Satya Commercial Complex, beside JC BROTHERS, near KPHB, Hyderabad, Telangana 500072",
-    image: Hyd
+    image: Hyd,
+    mapLink:"https://maps.app.goo.gl/J8jP5ojKgqZ1YR567"
   },
   {
     city: "Karimnagar",
     subtitle:"Branch Office",
     address:
       "2nd Floor, Court Chowrastha, Reddy Residency, Flat No, 202, Christian Colony, Karimnagar, Telangana 505501",
-    image:
-      Krm
+    image:Krm,
+    mapLink:"https://maps.app.goo.gl/MSM8oKDs1HvHvM277"
   },
 ];
 
@@ -50,8 +51,8 @@ const Address = () => {
                   <p className="text-secondary mb-4">{branch.address}</p>
 
                   <div className="d-flex flex-wrap gap-3">
-                    <button className="btn btn-call">Call Us</button>
-                    <button className="btn btn-map">Map</button>
+                    <a href="tel:7207775642"><button className="btn btn-call">Call Us</button></a>
+                    <a href={branch.mapLink} target="_blank"><button className="btn btn-map" >Map</button></a>
                   </div>
                 </div>
               </div>

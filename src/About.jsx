@@ -4,6 +4,7 @@ import {
   FaChalkboardTeacher,
   FaProjectDiagram,
   FaCloudUploadAlt,
+  FaRegHandshake
 } from "react-icons/fa";
 
 import about from './assets/images/sideimg.png'
@@ -29,6 +30,16 @@ const About = () => {
     {
       icon: <FaCloudUploadAlt />,
       title: "Deployment",
+      desc: "Get guided assistance to deploy your projects live on real platforms.",
+    },
+     {
+      icon: <FaUsers />,
+      title: "Placements",
+      desc: "Get guided assistance to deploy your projects live on real platforms.",
+    },
+    {
+      icon: <FaRegHandshake />,
+      title: "Job Assitance",
       desc: "Get guided assistance to deploy your projects live on real platforms.",
     },
   ];

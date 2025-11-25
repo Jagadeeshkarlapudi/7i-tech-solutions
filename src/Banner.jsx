@@ -53,7 +53,7 @@ const Banner = () => {
             </p>
           </div>
 
-                    <div className="col-lg-5 text-end">
+                    <div className="col-lg-5">
           <img src={banner} alt="" width={300} />
 </div>
 
