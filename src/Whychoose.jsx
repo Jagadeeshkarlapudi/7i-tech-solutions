@@ -10,7 +10,7 @@ import ver from './assets/images/vercel.png'
 // import deploy from './assets/images/deploy.png'
 // import design from './assets/images.design.png'
 import arrow from './assets/images/Arrows-1.png'
-import arrow1 from './assets/images/Arrows.png'
+import arrow1 from './assets/images/Arrows-2.png'
 
 
 const Whychoose = () => {
@@ -38,7 +38,7 @@ const Whychoose = () => {
 
         {/* Arrow */}
         <div className="arrow-container d-none d-md-block">
-          <img src={arrow1} alt="arrow" />
+          <img src={arrow1} alt="arrow" className="arrow"/>
         </div>
 
         {/* DEVELOPMENT */}

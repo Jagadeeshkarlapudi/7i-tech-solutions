@@ -9,17 +9,18 @@ import OurCourses from "../Ourcources";
 import poster from "../assets/images/poster.jpeg"
 import Toasts from "../Toasts";
 
-import { htmltopics } from "../data/fspythontopics";
-import { csstopics } from "../data/fspythontopics";
-import { bstopics } from "../data/fspythontopics";
-import { jstopics } from "../data/fspythontopics";
-import { reacttopics } from "../data/fspythontopics";
-import { pybasictopics } from "../data/fspythontopics";
-import { pyadtopics } from "../data/fspythontopics";
-import { djangotopics } from "../data/fspythontopics";
-import { sqlbstopics } from "../data/fspythontopics";
-import { sqladtopics } from "../data/fspythontopics";
-function FullstackPython() {
+import {gb} from "../data/fspythontopics" 
+import { marketing } from "../data/fspythontopics";
+import { intro } from "../data/fspythontopics";
+import { SEO } from "../data/fspythontopics";
+import { keyword } from "../data/fspythontopics";
+import { google } from "../data/fspythontopics";
+import { SMO } from "../data/fspythontopics";
+import { facebook } from "../data/fspythontopics";
+import { instagram } from "../data/fspythontopics";
+import { youtube } from "../data/fspythontopics";
+
+function DigitalMarketing() {
 
   return (
     <>
@@ -36,14 +37,13 @@ function FullstackPython() {
       <div className="row justify-content-center align-items-start">
         {/* LEFT SIDE */}
         <div className="col-lg-9 col-md-7 col-12 mb-4">
-          <h2 className="fw-bold text-primary mb-3">Full Stack Python</h2>
+          <h2 className="fw-bold text-primary mb-3">Digital Marketing</h2>
           <p className="text-muted mb-4">
-            Learn the complete Full Stack Python course — from frontend to backend and SQL. 
-            Perfect for beginners and working professionals looking to upskill.
+            Digital marketing is the promotion of products and services using online channels and digital technologies like websites, social media, and email. It encompasses a wide range of tactics, including search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, and social media marketing, to reach and engage with potential customers online. 
           </p>
 
           {/* FRONTEND */}
-          <h4 className="fw-semibold text-secondary mb-3">Frontend</h4>
+          <h4 className="fw-semibold text-secondary mb-3">Digital Marketing Course Curriculum</h4>
           <div className="accordion mb-4" id="frontendAccordion">
             {/* HTML */}
             <div className="accordion-item">
@@ -56,7 +56,7 @@ function FullstackPython() {
                   aria-expanded="false"
                   aria-controls="flush-collapseOne"
                 >
-                  HTML
+                  Marketing Basic
                 </button>
               </h2>
               <div
@@ -67,7 +67,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                   <div className="row g-1">
-            {htmltopics.map((item, i) => (
+            {marketing.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -90,7 +90,7 @@ function FullstackPython() {
                   aria-expanded="false"
                   aria-controls="collapseCss"
                 >
-                  CSS
+                  Introduction to Digital Marketing
                 </button>
               </h2>
               <div
@@ -101,7 +101,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {csstopics.map((item, i) => (
+            {intro.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -124,7 +124,7 @@ function FullstackPython() {
                   aria-expanded="false"
                   aria-controls="collapseBootstrap"
                 >
-                  Bootstrap
+                  Introduction to SEO
                 </button>
               </h2>
               <div
@@ -135,7 +135,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {bstopics.map((item, i) => (
+            {SEO.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -158,7 +158,7 @@ function FullstackPython() {
                   aria-expanded="false"
                   aria-controls="collapseJs"
                 >
-                  JavaScript
+                  Keyword Analysis
                 </button>
               </h2>
               <div
@@ -169,7 +169,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {jstopics.map((item, i) => (
+            {keyword.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -183,64 +183,60 @@ function FullstackPython() {
 
             {/* REACT */}
             <div className="accordion-item">
+              <h2 className="accordion-header" id="headingGoogle">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseGoogle"
+                  aria-expanded="false"
+                  aria-controls="collapseGoogle"
+                >
+                  Google Adwords
+                </button>
+              </h2>
+              <div
+                id="collapseGoogle"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingGoogle"
+                data-bs-parent="#frontendAccordion"
+              >
+                <div className="accordion-body">
+                      <div className="row g-1">
+            {google.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-4">
+                <div className="topic-box">
+                  • {item}
+                </div>
+              </div>
+            ))}
+          </div>
+                </div>
+              </div>
+            </div>
+
+             <div className="accordion-item">
               <h2 className="accordion-header" id="headingReact">
                 <button
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseReact"
+                  data-bs-target="#collapseSMO"
                   aria-expanded="false"
                   aria-controls="collapseReact"
                 >
-                  React
+                 Social Media Marketing (SMM)
                 </button>
               </h2>
               <div
-                id="collapseReact"
+                id="collapseSMO"
                 className="accordion-collapse collapse"
                 aria-labelledby="headingReact"
                 data-bs-parent="#frontendAccordion"
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {reacttopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
-                <div className="topic-box">
-                  • {item}
-                </div>
-              </div>
-            ))}
-          </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* BACKEND (Python) */}
-          <h4 className="fw-semibold text-secondary mb-3">Backend (Python)</h4>
-          <div className="accordion mb-4" id="backendAccordion">
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingPyBasic">
-                <button
-                  className="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapsePyBasic"
-                  aria-expanded="true"
-                  aria-controls="collapsePyBasic"
-                >
-                  Basic
-                </button>
-              </h2>
-              <div
-                id="collapsePyBasic"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingPyBasic"
-                data-bs-parent="#backendAccordion"
-              >
-                <div className="accordion-body">
-                      <div className="row g-1">
-            {pybasictopics.map((item, i) => (
+            {SMO.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -252,28 +248,28 @@ function FullstackPython() {
               </div>
             </div>
 
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingPyAdv">
+             <div className="accordion-item">
+              <h2 className="accordion-header" id="headingReact">
                 <button
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapsePyAdv"
+                  data-bs-target="#collapseFacebook"
                   aria-expanded="false"
-                  aria-controls="collapsePyAdv"
+                  aria-controls="collapseReact"
                 >
-                  Advanced
+                  Facebook Marketing
                 </button>
               </h2>
               <div
-                id="collapsePyAdv"
+                id="collapseFacebook"
                 className="accordion-collapse collapse"
-                aria-labelledby="headingPyAdv"
-                data-bs-parent="#backendAccordion"
+                aria-labelledby="headingReact"
+                data-bs-parent="#frontendAccordion"
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {pyadtopics.map((item, i) => (
+            {facebook.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -284,66 +280,28 @@ function FullstackPython() {
                 </div>
               </div>
             </div>
-
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingFramework">
+             <div className="accordion-item">
+              <h2 className="accordion-header" id="headingReact">
                 <button
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseFramework"
+                  data-bs-target="#collapseInstagram"
                   aria-expanded="false"
-                  aria-controls="collapseFramework"
+                  aria-controls="collapseReact"
                 >
-                  Framework
+                  Instagrm Marketing
                 </button>
               </h2>
               <div
-                id="collapseFramework"
+                id="collapseInstagram"
                 className="accordion-collapse collapse"
-                aria-labelledby="headingFramework"
-                data-bs-parent="#backendAccordion"
+                aria-labelledby="headingReact"
+                data-bs-parent="#frontendAccordion"
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {djangotopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
-                <div className="topic-box">
-                  • {item}
-                </div>
-              </div>
-            ))}
-          </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* SQL */}
-          <h4 className="fw-semibold text-secondary mb-3">SQL</h4>
-          <div className="accordion" id="sqlAccordion">
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingSqlBasic">
-                <button
-                  className="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseSqlBasic"
-                  aria-expanded="true"
-                  aria-controls="collapseSqlBasic"
-                >
-                  Basic
-                </button>
-              </h2>
-              <div
-                id="collapseSqlBasic"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingSqlBasic"
-                data-bs-parent="#sqlAccordion"
-              >
-                <div className="accordion-body">
-                      <div className="row g-1">
-            {sqlbstopics.map((item, i) => (
+            {instagram.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -355,28 +313,28 @@ function FullstackPython() {
               </div>
             </div>
 
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingSqlAdv">
+             <div className="accordion-item">
+              <h2 className="accordion-header" id="headingReact">
                 <button
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseSqlAdv"
+                  data-bs-target="#collapseYT"
                   aria-expanded="false"
-                  aria-controls="collapseSqlAdv"
+                  aria-controls="collapseReact"
                 >
-                  Advanced
+                  YouTube Marketing
                 </button>
               </h2>
               <div
-                id="collapseSqlAdv"
+                id="collapseYT"
                 className="accordion-collapse collapse"
-                aria-labelledby="headingSqlAdv"
-                data-bs-parent="#sqlAccordion"
+                aria-labelledby="headingReact"
+                data-bs-parent="#frontendAccordion"
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {sqladtopics.map((item, i) => (
+            {youtube.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -387,8 +345,45 @@ function FullstackPython() {
                 </div>
               </div>
             </div>
+
+
+             <div className="accordion-item">
+              <h2 className="accordion-header" id="headingGB">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseGB"
+                  aria-expanded="false"
+                  aria-controls="collapseGB"
+                >
+                  Google My Business Listing
+                </button>
+              </h2>
+              <div
+                id="collapseGB"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingGB"
+                data-bs-parent="#frontendAccordion"
+              >
+                <div className="accordion-body">
+                      <div className="row g-1">
+            {gb.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-4">
+                <div className="topic-box">
+                  • {item}
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          </div>
 
         {/* RIGHT SIDE CARD */}
         <div className="col-lg-3 col-md-5 col-12">
@@ -409,7 +404,7 @@ function FullstackPython() {
     </div>
     <div className="row mb-5 text-center">
       <div className="col">
-        <a href="../assets/docs/PYTHON_COURSE_CONTENT3D.pdf" download ><button className="btn btn-primary" >Download Cource Content</button></a>
+        <a href=""><button className="btn btn-primary">Download Cource Content</button></a>
       </div>
     </div>
     </div>
@@ -421,4 +416,4 @@ function FullstackPython() {
   );
 }
 
-export default FullstackPython;
+export default DigitalMarketing;

@@ -1459,6 +1459,9 @@ padding: 8rem 0rem;
   text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.social-icon svg{
+  width: 0.5em;
+}
 
 /* Platform colors */
 .facebook {
@@ -1481,6 +1484,7 @@ padding: 8rem 0rem;
 .social-icon:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #fff;
 }
 
 /* Hide on small screens */
@@ -2351,3 +2355,283 @@ padding: 8rem 0rem;
 
 
 /* softskils */
+
+/* about banneer */
+
+.abanner{
+  background-image: url("./assets/images/aboutbanner.png");
+  height: 78vh;
+  background-position: center;
+  background-size: cover;
+}
+
+/* @media screen and (max-width:320px){
+  .abanner{
+  background-image: url("./assets/images/aboutbanner.png");
+
+    width: 100%;
+    height: 100%;
+  }
+} */
+
+.accordion-button:not(.collapsed) {
+  background: none;
+}
+
+
+.btncolor{
+  background-color: var(--secondary-royal-blue);
+}
+
+.btncolor:hover{
+   background-color: #ff6b00;
+
+}
+
+.btnread:hover{
+  background-color: var(--secondary-royal-blue);
+}
+.btnread{
+  background-color: #ff6b00;
+}
+
+.btn-call:hover{
+  color: white;
+}
+.btn-map:hover{
+  color: white;
+  background-color: #003d82;
+}
+
+
+/* contact page */
+.contact-section {
+  padding: 60px 20px;
+  background: #f7f9fc;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  /* max-width: 1200px; */
+  /* margin: auto; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LEFT AREA */
+.contact-left {
+  width: 45%;
+}
+
+.contact-left h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.contact-left p {
+  margin: 10px 0 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.contact-details p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.follow-us h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.social-icons span {
+  margin-right: 10px;
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons span:hover {
+  transform: scale(1.2);
+  color: white !important;
+}
+.social-icons{
+  display: flex;
+}
+
+/* RIGHT FORM */
+.contact-right {
+  width: 50%;
+  background: #fff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+}
+
+.contact-form input,
+.contact-form select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.4);
+}
+
+.submit-btn {
+  padding: 14px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #0056d2;
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-left, .contact-right {
+    width: 100%;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .abanner{
+    display: none;
+  }
+  .contact-form{
+    grid-template-columns: 1fr;
+  }
+  .contact-right {
+    padding: 20px;
+  }
+}
+/* Left Side Details Box - Individual */
+.detail-box {
+  background: #fff;
+  border-left: 4px solid #ff7b00;  /* Only Left Border Orange */
+  border-radius: 10px;
+  padding: 15px 18px;
+  margin: 12px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.detail-box:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Follow Us Title Fix */
+.detail-box h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Social Icons */
+.social-icons span {
+  margin-right: 10px;
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons span:hover {
+  transform: scale(1.2);
+  color: #ff7b00;
+}
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+
+/* contact page */
+
+
+/* about institute */
+
+
+.about-section {
+  background: #ffffff;
+}
+
+.main-heading {
+  font-size: 32px;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: #ff6600;
+}
+
+.description {
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto 15px;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  .description {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+}
+.arrow{
+  transform: scaleY(-1);
+ 
+}
+
+
+/* about institute */
+
+
+/* vision */
+
+.shadow {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.text-primary {
+  color: #ff6a00 !important; /* Change to your brand color */
+}

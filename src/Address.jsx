@@ -23,7 +23,7 @@ const branches = [
 
 const Address = () => {
   return (
-    <div className="branches-section  py-5">
+    <div className="branches-section  py-5" id="address">
       <div className="container">
       <div className="row py-2">
         <div className="col-12 text-center">

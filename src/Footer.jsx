@@ -22,19 +22,17 @@ const Footer = () => {
           {/* Right Column - Social Media Icons */}
           <div className="col-md-6 text-center text-md-end">
             <div className="social-icons d-flex justify-content-center justify-content-md-end gap-3">
-              <a href="#" aria-label="Facebook">
+              <a href="https://www.facebook.com/7iTECHSOLUTIONS/" aria-label="Facebook" target="_blank">
                 <FaFacebookF />
               </a>
-              <a href="#" aria-label="Twitter">
-                <FaTwitter />
-              </a>
-              <a href="#" aria-label="Instagram">
+             
+              <a href="https://www.instagram.com/7itech_solutions/" aria-label="Instagram" target="_blank">
                 <FaInstagram />
               </a>
-              <a href="#" aria-label="LinkedIn">
+              <a href="https://in.linkedin.com/company/7itech-solutionss" aria-label="LinkedIn" target="_blank">
                 <FaLinkedinIn />
               </a>
-              <a href="#" aria-label="YouTube">
+              <a href="https://www.youtube.com/@7itechsolutions" aria-label="YouTube" target="_blank">
                 <FaYoutube />
               </a>
             </div>

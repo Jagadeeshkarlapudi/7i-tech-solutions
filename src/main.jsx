@@ -15,6 +15,15 @@ import Gallery from './pages/Gallery.jsx';
 import About from './pages/About.jsx';
 import Softskills from './pages/Softskills.jsx';
 import Contactpage from './pages/Contactpage.jsx';
+import FullStackJava from './courses/FullStackJava.jsx';
+import DigitalMarketing from './courses/DigitalMarketing.jsx';
+import Design from './courses/Design.jsx';
+import FrontReact from './courses/FrontReact.jsx';
+import Angular from './courses/Angular.jsx';
+import SpokenEnglish from './courses/SpokenEnglish.jsx';
+import FullstackPHP from './courses/FullStackPHP.jsx';
+import FullstackDOTNET from './courses/FullStackDOTNET.jsx';
+
 
 
 const router = createBrowserRouter([
@@ -41,6 +50,38 @@ const router = createBrowserRouter([
   {
     path:"contact",
     element:<Contactpage/>
+  },
+  {
+    path:"full-stack-java",
+    element:<FullStackJava/>
+  },
+  {
+    path:"digital-marketing",
+    element:<DigitalMarketing/>
+  },
+  {
+    path:"ui-ux",
+    element: <Design/>
+  },
+  {
+    path:"react",
+    element: <FrontReact/>
+  },
+  {
+    path:"angular",
+    element:<Angular/>
+  },
+  {
+    path:"spoken-english",
+    element:<SpokenEnglish/>
+  },
+  {
+    path:"full-stack-php",
+    element:<FullstackPHP/>
+  },
+  {
+    path:"full-stack-dotnet",
+    element:<FullstackDOTNET/>
   }
 ]);
 

@@ -14,12 +14,18 @@ import { csstopics } from "../data/fspythontopics";
 import { bstopics } from "../data/fspythontopics";
 import { jstopics } from "../data/fspythontopics";
 import { reacttopics } from "../data/fspythontopics";
-import { pybasictopics } from "../data/fspythontopics";
-import { pyadtopics } from "../data/fspythontopics";
-import { djangotopics } from "../data/fspythontopics";
-import { sqlbstopics } from "../data/fspythontopics";
-import { sqladtopics } from "../data/fspythontopics";
-function FullstackPython() {
+// import { pybasictopics } from "../data/fspythontopics";
+// import { pyadtopics } from "../data/fspythontopics";
+// import { djangotopics } from "../data/fspythontopics";
+// import { sqlbstopics } from "../data/fspythontopics";
+// import { sqladtopics } from "../data/fspythontopics";
+// import { jbasic } from "../data/fspythontopics";
+// import { jadv } from "../data/fspythontopics";
+// import { jframework } from "../data/fspythontopics";
+import { ux } from "../data/fspythontopics";
+import { uxdesign } from "../data/fspythontopics";
+import { testing } from "../data/fspythontopics";
+function Design() {
 
   return (
     <>
@@ -36,14 +42,13 @@ function FullstackPython() {
       <div className="row justify-content-center align-items-start">
         {/* LEFT SIDE */}
         <div className="col-lg-9 col-md-7 col-12 mb-4">
-          <h2 className="fw-bold text-primary mb-3">Full Stack Python</h2>
+          <h2 className="fw-bold text-primary mb-3">UI/UX Design</h2>
           <p className="text-muted mb-4">
-            Learn the complete Full Stack Python course — from frontend to backend and SQL. 
-            Perfect for beginners and working professionals looking to upskill.
+            UI/UX design is the process of creating digital products that are both functional and visually appealing. UI (User Interface) design focuses on the visual elements a user interacts with, such as buttons, icons, and layouts. UX (User Experience) design is broader, focusing on the overall experience and ensuring the product is intuitive, easy to use, and solves the user's problem.
           </p>
 
           {/* FRONTEND */}
-          <h4 className="fw-semibold text-secondary mb-3">Frontend</h4>
+          <h4 className="fw-semibold text-secondary mb-3">User Interface Design</h4>
           <div className="accordion mb-4" id="frontendAccordion">
             {/* HTML */}
             <div className="accordion-item">
@@ -216,8 +221,8 @@ function FullstackPython() {
             </div>
           </div>
 
-          {/* BACKEND (Python) */}
-          <h4 className="fw-semibold text-secondary mb-3">Backend (Python)</h4>
+          {/* BACKEND (Java) */}
+          <h4 className="fw-semibold text-secondary mb-3">User Expression</h4>
           <div className="accordion mb-4" id="backendAccordion">
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingPyBasic">
@@ -240,7 +245,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {pybasictopics.map((item, i) => (
+            {ux.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -273,7 +278,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {pyadtopics.map((item, i) => (
+            {uxdesign.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -295,7 +300,7 @@ function FullstackPython() {
                   aria-expanded="false"
                   aria-controls="collapseFramework"
                 >
-                  Framework
+                  Tools
                 </button>
               </h2>
               <div
@@ -306,7 +311,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {djangotopics.map((item, i) => (
+            {testing.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -319,75 +324,7 @@ function FullstackPython() {
             </div>
           </div>
 
-          {/* SQL */}
-          <h4 className="fw-semibold text-secondary mb-3">SQL</h4>
-          <div className="accordion" id="sqlAccordion">
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingSqlBasic">
-                <button
-                  className="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseSqlBasic"
-                  aria-expanded="true"
-                  aria-controls="collapseSqlBasic"
-                >
-                  Basic
-                </button>
-              </h2>
-              <div
-                id="collapseSqlBasic"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingSqlBasic"
-                data-bs-parent="#sqlAccordion"
-              >
-                <div className="accordion-body">
-                      <div className="row g-1">
-            {sqlbstopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
-                <div className="topic-box">
-                  • {item}
-                </div>
-              </div>
-            ))}
-          </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingSqlAdv">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseSqlAdv"
-                  aria-expanded="false"
-                  aria-controls="collapseSqlAdv"
-                >
-                  Advanced
-                </button>
-              </h2>
-              <div
-                id="collapseSqlAdv"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingSqlAdv"
-                data-bs-parent="#sqlAccordion"
-              >
-                <div className="accordion-body">
-                      <div className="row g-1">
-            {sqladtopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
-                <div className="topic-box">
-                  • {item}
-                </div>
-              </div>
-            ))}
-          </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  
         </div>
 
         {/* RIGHT SIDE CARD */}
@@ -409,7 +346,7 @@ function FullstackPython() {
     </div>
     <div className="row mb-5 text-center">
       <div className="col">
-        <a href="../assets/docs/PYTHON_COURSE_CONTENT3D.pdf" download ><button className="btn btn-primary" >Download Cource Content</button></a>
+        <a href=""><button className="btn btn-primary">Download Cource Content</button></a>
       </div>
     </div>
     </div>
@@ -421,4 +358,4 @@ function FullstackPython() {
   );
 }
 
-export default FullstackPython;
+export default Design;

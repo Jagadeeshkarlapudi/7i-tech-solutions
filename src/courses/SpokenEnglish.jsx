@@ -9,17 +9,17 @@ import OurCourses from "../Ourcources";
 import poster from "../assets/images/poster.jpeg"
 import Toasts from "../Toasts";
 
-import { htmltopics } from "../data/fspythontopics";
-import { csstopics } from "../data/fspythontopics";
-import { bstopics } from "../data/fspythontopics";
-import { jstopics } from "../data/fspythontopics";
-import { reacttopics } from "../data/fspythontopics";
-import { pybasictopics } from "../data/fspythontopics";
-import { pyadtopics } from "../data/fspythontopics";
-import { djangotopics } from "../data/fspythontopics";
-import { sqlbstopics } from "../data/fspythontopics";
-import { sqladtopics } from "../data/fspythontopics";
-function FullstackPython() {
+import { unit1, unit10, unit11, unit12, unit13 } from "../data/fspythontopics";
+import { unit2 } from "../data/fspythontopics";
+import { unit3 } from "../data/fspythontopics";
+import { unit4 } from "../data/fspythontopics";
+import { unit5 } from "../data/fspythontopics";
+import { unit6 } from "../data/fspythontopics";
+import { unit7 } from "../data/fspythontopics";
+import { unit8 } from "../data/fspythontopics";
+import { unit9 } from "../data/fspythontopics";
+
+function SpokenEnglish() {
 
   return (
     <>
@@ -36,14 +36,13 @@ function FullstackPython() {
       <div className="row justify-content-center align-items-start">
         {/* LEFT SIDE */}
         <div className="col-lg-9 col-md-7 col-12 mb-4">
-          <h2 className="fw-bold text-primary mb-3">Full Stack Python</h2>
+          <h2 className="fw-bold text-primary mb-3">Spoken English</h2>
           <p className="text-muted mb-4">
-            Learn the complete Full Stack Python course — from frontend to backend and SQL. 
-            Perfect for beginners and working professionals looking to upskill.
+            Spoken English is the act of communicating through spoken words and sentences in the English language, crucial for clear and effective communication in everyday life. To improve, focus on consistent practice, active listening, and building confidence, rather than solely on complex grammar.
           </p>
 
           {/* FRONTEND */}
-          <h4 className="fw-semibold text-secondary mb-3">Frontend</h4>
+          <h4 className="fw-semibold text-secondary mb-3">Foundation of Communication</h4>
           <div className="accordion mb-4" id="frontendAccordion">
             {/* HTML */}
             <div className="accordion-item">
@@ -56,7 +55,7 @@ function FullstackPython() {
                   aria-expanded="false"
                   aria-controls="flush-collapseOne"
                 >
-                  HTML
+                  Understanding English as a Language
                 </button>
               </h2>
               <div
@@ -67,8 +66,8 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                   <div className="row g-1">
-            {htmltopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
+            {unit1.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-12">
                 <div className="topic-box">
                   • {item}
                 </div>
@@ -90,7 +89,7 @@ function FullstackPython() {
                   aria-expanded="false"
                   aria-controls="collapseCss"
                 >
-                  CSS
+                  Building Blocks of English
                 </button>
               </h2>
               <div
@@ -101,8 +100,8 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {csstopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
+            {unit2.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-12">
                 <div className="topic-box">
                   • {item}
                 </div>
@@ -124,7 +123,7 @@ function FullstackPython() {
                   aria-expanded="false"
                   aria-controls="collapseBootstrap"
                 >
-                  Bootstrap
+                  Everyday Functional English
                 </button>
               </h2>
               <div
@@ -135,8 +134,8 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {bstopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
+            {unit3.map((item, i) => (
+              <div key={i} className="col-12 col-md-12 col-lg-12">
                 <div className="topic-box">
                   • {item}
                 </div>
@@ -147,77 +146,12 @@ function FullstackPython() {
               </div>
             </div>
 
-            {/* JAVASCRIPT */}
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingJs">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseJs"
-                  aria-expanded="false"
-                  aria-controls="collapseJs"
-                >
-                  JavaScript
-                </button>
-              </h2>
-              <div
-                id="collapseJs"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingJs"
-                data-bs-parent="#frontendAccordion"
-              >
-                <div className="accordion-body">
-                      <div className="row g-1">
-            {jstopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
-                <div className="topic-box">
-                  • {item}
-                </div>
-              </div>
-            ))}
-          </div>
-                </div>
-              </div>
-            </div>
+         
 
-            {/* REACT */}
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingReact">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseReact"
-                  aria-expanded="false"
-                  aria-controls="collapseReact"
-                >
-                  React
-                </button>
-              </h2>
-              <div
-                id="collapseReact"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingReact"
-                data-bs-parent="#frontendAccordion"
-              >
-                <div className="accordion-body">
-                      <div className="row g-1">
-            {reacttopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
-                <div className="topic-box">
-                  • {item}
-                </div>
-              </div>
-            ))}
-          </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* BACKEND (Python) */}
-          <h4 className="fw-semibold text-secondary mb-3">Backend (Python)</h4>
+          <h4 className="fw-semibold text-secondary mb-3">Grammar for Real Communication</h4>
           <div className="accordion mb-4" id="backendAccordion">
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingPyBasic">
@@ -229,7 +163,7 @@ function FullstackPython() {
                   aria-expanded="true"
                   aria-controls="collapsePyBasic"
                 >
-                  Basic
+                  Tenses with Spoken Applications
                 </button>
               </h2>
               <div
@@ -240,8 +174,8 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {pybasictopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
+            {unit4.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-12">
                 <div className="topic-box">
                   • {item}
                 </div>
@@ -262,7 +196,7 @@ function FullstackPython() {
                   aria-expanded="false"
                   aria-controls="collapsePyAdv"
                 >
-                  Advanced
+                  Smart Grammar Tools
                 </button>
               </h2>
               <div
@@ -273,8 +207,8 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {pyadtopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
+            {unit5.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-12">
                 <div className="topic-box">
                   • {item}
                 </div>
@@ -285,42 +219,11 @@ function FullstackPython() {
               </div>
             </div>
 
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingFramework">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFramework"
-                  aria-expanded="false"
-                  aria-controls="collapseFramework"
-                >
-                  Framework
-                </button>
-              </h2>
-              <div
-                id="collapseFramework"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingFramework"
-                data-bs-parent="#backendAccordion"
-              >
-                <div className="accordion-body">
-                      <div className="row g-1">
-            {djangotopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
-                <div className="topic-box">
-                  • {item}
-                </div>
-              </div>
-            ))}
-          </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
 
           {/* SQL */}
-          <h4 className="fw-semibold text-secondary mb-3">SQL</h4>
+          <h4 className="fw-semibold text-secondary mb-3">Vocabulary & Expression Development</h4>
           <div className="accordion" id="sqlAccordion">
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingSqlBasic">
@@ -332,7 +235,7 @@ function FullstackPython() {
                   aria-expanded="true"
                   aria-controls="collapseSqlBasic"
                 >
-                  Basic
+                  Life-Based Vocabulary
                 </button>
               </h2>
               <div
@@ -343,8 +246,8 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {sqlbstopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
+            {unit6.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-12">
                 <div className="topic-box">
                   • {item}
                 </div>
@@ -365,7 +268,7 @@ function FullstackPython() {
                   aria-expanded="false"
                   aria-controls="collapseSqlAdv"
                 >
-                  Advanced
+                  Fluency Enhancers
                 </button>
               </h2>
               <div
@@ -376,8 +279,8 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {sqladtopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
+            {unit7.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-12">
                 <div className="topic-box">
                   • {item}
                 </div>
@@ -388,6 +291,223 @@ function FullstackPython() {
               </div>
             </div>
           </div>
+
+
+            {/* level4 */}
+
+                 <h4 className="fw-semibold text-secondary my-3">Real Conversation Practice</h4>
+          <div className="accordion" id="level4">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headunit8">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#unit8"
+                  aria-expanded="true"
+                  aria-controls="unit8"
+                >
+                  Situational Dialogues
+                </button>
+              </h2>
+              <div
+                id="unit8"
+                className="accordion-collapse collapse"
+                aria-labelledby="headunit8"
+                data-bs-parent="#level4"
+              >
+                <div className="accordion-body">
+                      <div className="row g-1">
+            {unit8.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-12">
+                <div className="topic-box">
+                  • {item}
+                </div>
+              </div>
+            ))}
+          </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headunit9">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#unit9"
+                  aria-expanded="false"
+                  aria-controls="unit9"
+                >
+                  Role Plays & Activity Sessions
+                </button>
+              </h2>
+              <div
+                id="unit9"
+                className="accordion-collapse collapse"
+                aria-labelledby="headunit9"
+                data-bs-parent="#level4"
+              >
+                <div className="accordion-body">
+                      <div className="row g-1">
+            {unit9.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-12">
+                <div className="topic-box">
+                  • {item}
+                </div>
+              </div>
+            ))}
+          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          {/* level5 */}
+
+              <h4 className="fw-semibold text-secondary my-3">Accent & Pronunciation Mastery</h4>
+          <div className="accordion" id="level5">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headunit10">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#unit10"
+                  aria-expanded="true"
+                  aria-controls="unit10"
+                >
+                  Phonetics for Beginners
+                </button>
+              </h2>
+              <div
+                id="unit10"
+                className="accordion-collapse collapse"
+                aria-labelledby="headunit10"
+                data-bs-parent="#level5"
+              >
+                <div className="accordion-body">
+                      <div className="row g-1">
+            {unit10.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-12">
+                <div className="topic-box">
+                  • {item}
+                </div>
+              </div>
+            ))}
+          </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headunit11">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#unit11"
+                  aria-expanded="false"
+                  aria-controls="unit11"
+                >
+                  Presenting Ideas Confidently
+                </button>
+              </h2>
+              <div
+                id="unit11"
+                className="accordion-collapse collapse"
+                aria-labelledby="headunit11"
+                data-bs-parent="#level5"
+              >
+                <div className="accordion-body">
+                      <div className="row g-1">
+            {unit11.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-12">
+                <div className="topic-box">
+                  • {item}
+                </div>
+              </div>
+            ))}
+          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+{/* level6 */}
+
+
+              <h4 className="fw-semibold text-secondary my-3">Public Speaking & Career Communication</h4>
+          <div className="accordion" id="level6">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headunit12">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#unit12"
+                  aria-expanded="true"
+                  aria-controls="unit12"
+                >
+                  Professional English
+                </button>
+              </h2>
+              <div
+                id="unit12"
+                className="accordion-collapse collapse"
+                aria-labelledby="headunit12"
+                data-bs-parent="#level6"
+              >
+                <div className="accordion-body">
+                      <div className="row g-1">
+            {unit12.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-12">
+                <div className="topic-box">
+                  • {item}
+                </div>
+              </div>
+            ))}
+          </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headunit13">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#unit13"
+                  aria-expanded="false"
+                  aria-controls="unit13"
+                >
+                  Reading, Listening & Writing Enhancement
+                </button>
+              </h2>
+              <div
+                id="unit13"
+                className="accordion-collapse collapse"
+                aria-labelledby="headunit13"
+                data-bs-parent="#level6"
+              >
+                <div className="accordion-body">
+                      <div className="row g-1">
+            {unit13.map((item, i) => (
+              <div key={i} className="col-12 col-md-6 col-lg-12">
+                <div className="topic-box">
+                  • {item}
+                </div>
+              </div>
+            ))}
+          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* RIGHT SIDE CARD */}
@@ -421,4 +541,4 @@ function FullstackPython() {
   );
 }
 
-export default FullstackPython;
+export default SpokenEnglish;

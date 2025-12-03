@@ -1,34 +1,61 @@
 import React from "react";
-
+import sanju from "./assets/images/sanju.png"
+import anu from "./assets/images/anu.png"
+import santhosh from "./assets/images/santhosh.jpg"
+import santosh from "./assets/images/santosh.jpeg"
+import niroop from "./assets/images/niroop.png"
+import varun from "./assets/images/varun.png"
+import sravan from "./assets/images/sravan.jpeg"
 
 const portfolioData = [
   {
-    img: "https://via.placeholder.com/150",
-    name: "John Doe",
+    img: anu,
+    name: "Anusha",
     title: "E-Commerce Web App",
     desc: "A complete e-commerce website with payments and admin dashboard.",
-    link: "#"
+    link: "https://anusha.7iworkspace.in/"
   },
   {
-    img: "https://via.placeholder.com/150",
-    name: "Sanjana R",
-    title: "Hotel Booking System",
-    desc: "Hotel booking system with filters, calendar sync and secure login.",
-    link: "#"
+    img: sravan,
+    name: "Sravan Reddy",
+    title: "Collage Website",
+    desc: "Making a website is now one of the easiest things in the world. You just need to learn HTML, CSS, and JavaScript, and you are good to go.",
+    link: "https://sravan.7iworkspace.in/"
   },
   {
-    img: "https://via.placeholder.com/150",
-    name: "Rahul Kumar",
-    title: "Portfolio Website",
-    desc: "Animated portfolio website built using React.",
-    link: "#"
+    img: varun,
+    name: "Varun Kumar",
+    title: "Pelli Alankarana",
+    desc: "At Pelli Alankarana, we believe that every Telugu wedding deserves the perfect traditional touch.",
+    link: "https://varun.7iworkspace.in/"
   },
   {
-    img: "https://via.placeholder.com/150",
-    name: "Meghana",
+    img: sanju,
+    name: "Kanakadhurga Rao",
     title: "Food Delivery App",
     desc: "A real-time food delivery UI with live tracking.",
-    link: "#"
+    link: "https://sanju.7iworkspace.in/"
+  },
+  {
+    img: niroop,
+    name: "Niroop Kumar",
+    title: "Interior Website",
+    desc: "We Create Stunning Spaces Our designs blend functionality and beauty to create timeless interiors.",
+    link: "https://niroop-portfolio.vercel.app/"
+  },
+  {
+    img: santhosh,
+    name: "Santhosh Kumar",
+    title: "Building Website",
+    desc: "A professional landing page for a fictional construction company. ",
+    link: "https://santosh.7iworkspace.in/"
+  },
+  {
+    img: santosh,
+    name: "Santhosh",
+    title: "Food Delivery App",
+    desc: "A real-time food delivery UI with live tracking.",
+    link: "https://santhosh.7iworkspace.in/"
   }
 ];
 

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { FaSearchPlus } from "react-icons/fa";
 import Navbar from "../Navbar";
 import python from "../assets/images/python.png"
-import simg from "../assets/images/sideimg.png"
+// import simg from "../assets/images/sideimg.png"
 import Address from "../Address";
 import Whatsapp from "../Whatsapp";
 import Footer from "../Footer";
@@ -16,17 +16,20 @@ import gallery3 from "../assets/images/gallery3.jpeg"
 import gallery4 from "../assets/images/gallery4.jpeg"
 import gallery5 from "../assets/images/gallery5.jpeg"
 import gallery6 from "../assets/images/gallery6.jpeg"
+import gallery7 from "../assets/images/gallery7.webp"
+import gallery8 from "../assets/images/gallery8.png"
 
 const images = [
  python,
-  simg,
+ 
   gallery1,
   gallery2,
   gallery3,
   gallery4,
   gallery5,
   gallery6,
-  "/images/pic9.jpg",
+  gallery7,
+  gallery8
 ];
 
 const Gallery = () => {

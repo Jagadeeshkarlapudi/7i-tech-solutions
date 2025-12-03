@@ -17,35 +17,32 @@ const MENU = [
         label: "Full Stack",
         children: [
           { label: "Python Full Stack", href: "/full-stack-python/" },
-          { label: "Java Full Stack", href: "#" },
-          { label: "MERN Stack", href: "#" },
-          { label: "MEAN Stack", href: "#" },
+          { label: "Java Full Stack", href: "/full-stack-java/" },
+          { label: "PHP Full Stack", href: "/full-stack-php/" },
+          { label: ".NET Full Stack", href: "/full-stack-dotnet/" },
+          
         ],
       },
       {
         label: "Digital Marketing",
-        children: [
-          { label: "SEO", href: "#" },
-          { label: "Social Media Marketing", href: "#" },
-          { label: "Email Marketing", href: "#" },
-        ],
+       href:"/digital-marketing/"
       },
       {
         label: "UI/UX",
-        children: [
-          { label: "Figma", href: "#" },
-          { label: "Adobe XD", href: "#" },
-          { label: "Prototyping", href: "#" },
-        ],
+        href:"/ui-ux/"
       },
       {
-        label: "Data Science",
-        children: [
-          { label: "Python", href: "#" },
-          { label: "Machine Learning", href: "#" },
-          { label: "Deep Learning", href: "#" },
-        ],
+        label: "UI React",
+        href:"/react/"
       },
+      {
+        label:"UI Angular",
+        href:"/angular/"
+      },
+      {
+        label:"Spoken English",
+        href:"/spoken-english/"
+      }
     ],
   },
   { label: "Portfolio", href: "#" },
@@ -74,13 +71,34 @@ function Navbar() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit =  async (e) => {
     e.preventDefault();
     if (validate()) {
       alert(`Thank you ${form.name}! We’ll contact you soon.`);
       setShowModal(false);
-      setForm({ name: "", phone: "" });
+      setForm({ name: "", phone: "" , course:""});
     }
+   const formData = new FormData(e.target);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+
+  const res = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: json,
+  });
+
+  const result = await res.json();
+  // console.log(result);
+
+  if (result.success) {
+    alert("Form submitted successfully!");
+  } else {
+    alert("Something went wrong!");
+  }
   };
 
 
@@ -188,47 +206,62 @@ function Navbar() {
               </div>
 
               <div className="modal-body">
-                <form onSubmit={handleSubmit} noValidate>
-                  <div className="mb-3 text-start">
-                    {/* <label className="form-label fw-semibold">Full Name</label> */}
-                    <input
-                      type="text"
-                      className={`form-control ${
-                        errors.name ? "is-invalid" : ""
-                      }`}
-                      placeholder="Enter your name"
-                      value={form.name}
-                      onChange={(e) =>
-                        setForm({ ...form, name: e.target.value })
-                      }
-                    />
-                    {errors.name && (
-                      <div className="invalid-feedback">{errors.name}</div>
-                    )}
-                  </div>
+              <form  onSubmit={handleSubmit} noValidate>
 
-                  <div className="mb-3 text-start">
-                    {/* <label className="form-label fw-semibold">Phone Number</label> */}
-                    <input
-                      type="text"
-                      className={`form-control ${
-                        errors.phone ? "is-invalid" : ""
-                      }`}
-                      placeholder="Enter your 10-digit phone number"
-                      value={form.phone}
-                      onChange={(e) =>
-                        setForm({ ...form, phone: e.target.value })
-                      }
-                    />
-                    {errors.phone && (
-                      <div className="invalid-feedback">{errors.phone}</div>
-                    )}
-                  </div>
+  {/* Web3Forms Required Hidden Fields */}
+  <input type="hidden" name="access_key" value="17303a76-f0b2-4223-ab35-2be9736cb586" />
+  <input type="hidden" name="subject" value="New Contact Form Enquiry" />
+  <input type="hidden" name="from_name" value="7i Tech Solutions Website" />
 
-                  <button type="submit" className="btn btn-primary w-100 mt-2">
-                    Submit
-                  </button>
-                </form>
+  <div className="mb-3 text-start">
+    <input
+      type="text"
+      name="name"
+      className={`form-control ${errors.name ? "is-invalid" : ""}`}
+      placeholder="Enter your name"
+      value={form.name}
+      onChange={(e) => setForm({ ...form, name: e.target.value })}
+      required
+    />
+    {errors.name && <div className="invalid-feedback">{errors.name}</div>}
+  </div>
+
+  <div className="mb-3 text-start">
+    <input
+      type="text"
+      name="phone"
+      className={`form-control ${errors.phone ? "is-invalid" : ""}`}
+      placeholder="Enter your 10-digit phone number"
+      value={form.phone}
+      onChange={(e) => setForm({ ...form, phone: e.target.value })}
+      required
+    />
+    {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
+  </div>
+
+  {/* Optional Course Dropdown */}
+  <div className="mb-3 text-start">
+    <select
+      name="course"
+      className="form-control"
+      value={form.course || ""}
+      onChange={(e) => setForm({ ...form, course: e.target.value })}
+    >
+      <option value="">Select Course (Optional)</option>
+      <option value="Spoken English">Spoken English</option>
+      <option value="Python Full Stack">Python Full Stack</option>
+      <option value="Java Full Stack">Java Full Stack</option>
+      <option value="MERN Full Stack">MERN Full Stack</option>
+      <option value="Data Science">Data Science</option>
+    </select>
+  </div>
+
+  <button type="submit" className="btn btn-primary w-100 mt-2">
+    Submit
+  </button>
+</form>
+
+
               </div>
             </div>
           </div>

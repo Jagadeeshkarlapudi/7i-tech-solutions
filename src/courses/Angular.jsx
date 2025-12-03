@@ -1,4 +1,4 @@
-import React from "react";
+// import FrontReact from "FrontReact";
 import Navbar from "../Navbar";
 import Address from "../Address";
 import Footer from "../Footer";
@@ -13,13 +13,14 @@ import { htmltopics } from "../data/fspythontopics";
 import { csstopics } from "../data/fspythontopics";
 import { bstopics } from "../data/fspythontopics";
 import { jstopics } from "../data/fspythontopics";
-import { reacttopics } from "../data/fspythontopics";
-import { pybasictopics } from "../data/fspythontopics";
-import { pyadtopics } from "../data/fspythontopics";
-import { djangotopics } from "../data/fspythontopics";
-import { sqlbstopics } from "../data/fspythontopics";
-import { sqladtopics } from "../data/fspythontopics";
-function FullstackPython() {
+import { angular } from "../data/fspythontopics";
+// import { reacttopics } from "../data/fspythontopics";
+// import { pybasictopics } from "../data/fspythontopics";
+// import { pyadtopics } from "../data/fspythontopics";
+// import { djangotopics } from "../data/fspythontopics";
+// import { sqlbstopics } from "../data/fspythontopics";
+// import { sqladtopics } from "../data/fspythontopics";
+function Angular() {
 
   return (
     <>
@@ -36,10 +37,9 @@ function FullstackPython() {
       <div className="row justify-content-center align-items-start">
         {/* LEFT SIDE */}
         <div className="col-lg-9 col-md-7 col-12 mb-4">
-          <h2 className="fw-bold text-primary mb-3">Full Stack Python</h2>
+          <h2 className="fw-bold text-primary mb-3">UI with Angular</h2>
           <p className="text-muted mb-4">
-            Learn the complete Full Stack Python course — from frontend to backend and SQL. 
-            Perfect for beginners and working professionals looking to upskill.
+            Learn the complete UI with Angular course — Angular is a JavaScript library specifically designed for building user interfaces (UIs). It achieves this by allowing developers to create reusable, self-contained units of UI called "components".
           </p>
 
           {/* FRONTEND */}
@@ -181,29 +181,29 @@ function FullstackPython() {
               </div>
             </div>
 
-            {/* REACT */}
+            {/* FrontReact */}
             <div className="accordion-item">
-              <h2 className="accordion-header" id="headingReact">
+              <h2 className="accordion-header" id="headingFrontReact">
                 <button
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseReact"
+                  data-bs-target="#collapseFrontReact"
                   aria-expanded="false"
-                  aria-controls="collapseReact"
+                  aria-controls="collapseFrontReact"
                 >
-                  React
+                  Angular
                 </button>
               </h2>
               <div
-                id="collapseReact"
+                id="collapseFrontReact"
                 className="accordion-collapse collapse"
-                aria-labelledby="headingReact"
+                aria-labelledby="headingFrontReact"
                 data-bs-parent="#frontendAccordion"
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {reacttopics.map((item, i) => (
+            {angular.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -216,178 +216,9 @@ function FullstackPython() {
             </div>
           </div>
 
-          {/* BACKEND (Python) */}
-          <h4 className="fw-semibold text-secondary mb-3">Backend (Python)</h4>
-          <div className="accordion mb-4" id="backendAccordion">
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingPyBasic">
-                <button
-                  className="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapsePyBasic"
-                  aria-expanded="true"
-                  aria-controls="collapsePyBasic"
-                >
-                  Basic
-                </button>
-              </h2>
-              <div
-                id="collapsePyBasic"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingPyBasic"
-                data-bs-parent="#backendAccordion"
-              >
-                <div className="accordion-body">
-                      <div className="row g-1">
-            {pybasictopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
-                <div className="topic-box">
-                  • {item}
-                </div>
-              </div>
-            ))}
-          </div>
-                </div>
-              </div>
-            </div>
+    
 
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingPyAdv">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapsePyAdv"
-                  aria-expanded="false"
-                  aria-controls="collapsePyAdv"
-                >
-                  Advanced
-                </button>
-              </h2>
-              <div
-                id="collapsePyAdv"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingPyAdv"
-                data-bs-parent="#backendAccordion"
-              >
-                <div className="accordion-body">
-                      <div className="row g-1">
-            {pyadtopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
-                <div className="topic-box">
-                  • {item}
-                </div>
-              </div>
-            ))}
-          </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingFramework">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFramework"
-                  aria-expanded="false"
-                  aria-controls="collapseFramework"
-                >
-                  Framework
-                </button>
-              </h2>
-              <div
-                id="collapseFramework"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingFramework"
-                data-bs-parent="#backendAccordion"
-              >
-                <div className="accordion-body">
-                      <div className="row g-1">
-            {djangotopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
-                <div className="topic-box">
-                  • {item}
-                </div>
-              </div>
-            ))}
-          </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* SQL */}
-          <h4 className="fw-semibold text-secondary mb-3">SQL</h4>
-          <div className="accordion" id="sqlAccordion">
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingSqlBasic">
-                <button
-                  className="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseSqlBasic"
-                  aria-expanded="true"
-                  aria-controls="collapseSqlBasic"
-                >
-                  Basic
-                </button>
-              </h2>
-              <div
-                id="collapseSqlBasic"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingSqlBasic"
-                data-bs-parent="#sqlAccordion"
-              >
-                <div className="accordion-body">
-                      <div className="row g-1">
-            {sqlbstopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
-                <div className="topic-box">
-                  • {item}
-                </div>
-              </div>
-            ))}
-          </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingSqlAdv">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseSqlAdv"
-                  aria-expanded="false"
-                  aria-controls="collapseSqlAdv"
-                >
-                  Advanced
-                </button>
-              </h2>
-              <div
-                id="collapseSqlAdv"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingSqlAdv"
-                data-bs-parent="#sqlAccordion"
-              >
-                <div className="accordion-body">
-                      <div className="row g-1">
-            {sqladtopics.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-lg-4">
-                <div className="topic-box">
-                  • {item}
-                </div>
-              </div>
-            ))}
-          </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
 
         {/* RIGHT SIDE CARD */}
@@ -421,4 +252,4 @@ function FullstackPython() {
   );
 }
 
-export default FullstackPython;
+export default Angular;

@@ -20,7 +20,7 @@ const Companies = () => {
       <div className="container text-center">
         <h2 className=" mb-4">Our Hiring Partners</h2>
 
-        <div className="logos-slider d-flex overflow-hidden position-relative">
+        <div className="logos-slider d-flex overflow-hidden position-relative py-3">
           <div className="logos-track d-flex">
             {companyLogos.map((logo, index) => (
               <div key={index} className="logo-item mx-4">

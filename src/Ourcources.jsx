@@ -1,11 +1,17 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Star, Youtube, Clock, BadgeCheck } from "lucide-react";
+import { Star, Play, Clock, BadgeCheck } from "lucide-react";
 import design from "./assets/images/uiux.png"
 import java from "./assets/images/java.png"
 import python from "./assets/images/python.png"
 import react from "./assets/images/react.png"
-import { a, title } from "framer-motion/client";
+import msoffice from "./assets/images/msoffice.png"
+import angular from "./assets/images/angular.png"
+import mern from "./assets/images/mern.png"
+import dm from "./assets/images/dm.png"
+import c from "./assets/images/c.png"
+import yt from "./assets/images/youtube.png"
+import { a, title, video } from "framer-motion/client";
 
 
 // FILTER OPTIONS
@@ -28,57 +34,74 @@ const courses = [
     
     tech: "HTML | CSS | JS | BOOTSTRAP | REACT",
     rating: 5,
+    video:"https://www.youtube.com/watch?v=zOvdZE8-t54&t=79s"
   },
   {
     id: 2,
-    title: "Fullstack React",
+    title: "UI React",
     category: "FrontEnd Courses",
     img: react,
     
     tech: "HTML | CSS | JS | BOOTSTRAP | REACT",
     rating: 5,
+    video: "https://www.youtube.com/watch?v=zOvdZE8-t54&t=79s"
   },
   {
     id: 3,
+    title: "UI Angular",
+    category: "FrontEnd Courses",
+    img: angular,
+    
+    tech: "HTML | CSS | JS | BOOTSTRAP | Angular",
+    rating: 5,
+    video:""
+  },
+  {
+    id: 4,
     title: "Fullstack Java",
     category: "FullStack Courses",
     img: java,
     
     tech: "JAVA | JDBC | SPRINGBOOT | HIBERNATE",
     rating: 5,
+    video:""
   },
   {
-    id: 4,
+    id: 5,
     title: "Fullstack Python",
     category: "FullStack Courses",
     img: python,
    
     tech: "HTML | CSS | PYTHON | DJANGO | REACT",
     rating: 5,
-  },
-  {
-    id:5,
-    title: "Digital Marketing",
-    category: "Digital Marketing",
-    img: python,
-    tech : "SEO | GOOGLE ADS | ADS | RATTINGS",
-    rating: 5,
+    video:"https://www.youtube.com/watch?v=zOvdZE8-t54&t=79s"
   },
   {
     id:6,
-    title: "C language",
-    category:"Other Courses",
-    img:python,
-    tech : "C Lang",
-    rating:4,
+    title: "Digital Marketing",
+    category: "Digital Marketing",
+    img: dm,
+    tech : "SEO | GOOGLE ADS | ADS | RATTINGS",
+    rating: 5,
+    video:""
   },
   {
     id:7,
+    title: "C language",
+    category:"Other Courses",
+    img:c,
+    tech : "C Lang",
+    rating:4,
+    video:"https://www.youtube.com/watch?v=zOvdZE8-t54&t=79s"
+  },
+  {
+    id:8,
     title:"MS Office",
     category:"Other Courses",
-    img:java,
+    img:msoffice,
     tech: "Word | Excel | Power Point",
-    rating:5
+    rating:5,
+    video:""
   }
 ];
 
@@ -167,9 +190,14 @@ export default function OurCourses() {
                       <Star key={i} size={16} fill="currentColor" />
                     ))}
                   </div>
-                    <div className="d-flex justify-content-between align-items-center">
+                    <div className="d-flex justify-content-between align-items-center" >
                       
-                    <Youtube size={16} className="bg-danger text-white rounded me-2" /><span> video</span>
+                  {course.video?.trim() !== "" && (
+  <a href={video} target="_blank" rel="noopener noreferrer">
+    <img src={yt} alt="YouTube" />
+  </a>
+)}
+
                   
                     </div>
 
@@ -178,10 +206,10 @@ export default function OurCourses() {
                 {/* Buttons */}
                 <div className="d-flex justify-content-between mt-3">
                   <div>
-                    <button className="btn btn-warning text-white">Read More</button>
+                    <button className="btn btn-warning btnread text-white">Read More</button>
                   </div>
                   <div>
-                  <a href=""><button className="btn btn-warning text-white ">Free Demo</button></a>
+                  <a href=""><button className="btn btn-warning btncolor text-white ">Free Demo</button></a>
 
                   </div>
 

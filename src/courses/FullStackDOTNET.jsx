@@ -14,12 +14,13 @@ import { csstopics } from "../data/fspythontopics";
 import { bstopics } from "../data/fspythontopics";
 import { jstopics } from "../data/fspythontopics";
 import { reacttopics } from "../data/fspythontopics";
-import { pybasictopics } from "../data/fspythontopics";
-import { pyadtopics } from "../data/fspythontopics";
-import { djangotopics } from "../data/fspythontopics";
+// import { pybasictopics } from "../data/fspythontopics";
+import { netbasic } from "../data/fspythontopics";
+import { netadv } from "../data/fspythontopics";
+import { netframework } from "../data/fspythontopics";
 import { sqlbstopics } from "../data/fspythontopics";
 import { sqladtopics } from "../data/fspythontopics";
-function FullstackPython() {
+function FullstackDOTNET() {
 
   return (
     <>
@@ -36,9 +37,9 @@ function FullstackPython() {
       <div className="row justify-content-center align-items-start">
         {/* LEFT SIDE */}
         <div className="col-lg-9 col-md-7 col-12 mb-4">
-          <h2 className="fw-bold text-primary mb-3">Full Stack Python</h2>
+          <h2 className="fw-bold text-primary mb-3">Full Stack DOT NET</h2>
           <p className="text-muted mb-4">
-            Learn the complete Full Stack Python course — from frontend to backend and SQL. 
+            Learn the complete Full Stack DOT NET course — from frontend to backend and SQL. 
             Perfect for beginners and working professionals looking to upskill.
           </p>
 
@@ -217,7 +218,7 @@ function FullstackPython() {
           </div>
 
           {/* BACKEND (Python) */}
-          <h4 className="fw-semibold text-secondary mb-3">Backend (Python)</h4>
+          <h4 className="fw-semibold text-secondary mb-3">Backend (DOT NET)</h4>
           <div className="accordion mb-4" id="backendAccordion">
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingPyBasic">
@@ -240,7 +241,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {pybasictopics.map((item, i) => (
+            {netbasic.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -273,7 +274,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {pyadtopics.map((item, i) => (
+            {netadv.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -306,7 +307,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {djangotopics.map((item, i) => (
+            {netframework.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -421,4 +422,4 @@ function FullstackPython() {
   );
 }
 
-export default FullstackPython;
+export default FullstackDOTNET;

@@ -14,12 +14,15 @@ import { csstopics } from "../data/fspythontopics";
 import { bstopics } from "../data/fspythontopics";
 import { jstopics } from "../data/fspythontopics";
 import { reacttopics } from "../data/fspythontopics";
-import { pybasictopics } from "../data/fspythontopics";
-import { pyadtopics } from "../data/fspythontopics";
-import { djangotopics } from "../data/fspythontopics";
+// import { pybasictopics } from "../data/fspythontopics";
+// import { pyadtopics } from "../data/fspythontopics";
+// import { djangotopics } from "../data/fspythontopics";
 import { sqlbstopics } from "../data/fspythontopics";
 import { sqladtopics } from "../data/fspythontopics";
-function FullstackPython() {
+import { jbasic } from "../data/fspythontopics";
+import { jadv } from "../data/fspythontopics";
+import { jframework } from "../data/fspythontopics";
+function FullStackJava() {
 
   return (
     <>
@@ -36,9 +39,9 @@ function FullstackPython() {
       <div className="row justify-content-center align-items-start">
         {/* LEFT SIDE */}
         <div className="col-lg-9 col-md-7 col-12 mb-4">
-          <h2 className="fw-bold text-primary mb-3">Full Stack Python</h2>
+          <h2 className="fw-bold text-primary mb-3">Full Stack Java</h2>
           <p className="text-muted mb-4">
-            Learn the complete Full Stack Python course — from frontend to backend and SQL. 
+            Learn the complete Full Stack Java course — from frontend to backend and SQL. 
             Perfect for beginners and working professionals looking to upskill.
           </p>
 
@@ -216,8 +219,8 @@ function FullstackPython() {
             </div>
           </div>
 
-          {/* BACKEND (Python) */}
-          <h4 className="fw-semibold text-secondary mb-3">Backend (Python)</h4>
+          {/* BACKEND (Java) */}
+          <h4 className="fw-semibold text-secondary mb-3">Backend (Java)</h4>
           <div className="accordion mb-4" id="backendAccordion">
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingPyBasic">
@@ -240,7 +243,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {pybasictopics.map((item, i) => (
+            {jbasic.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -273,7 +276,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {pyadtopics.map((item, i) => (
+            {jadv.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -306,7 +309,7 @@ function FullstackPython() {
               >
                 <div className="accordion-body">
                       <div className="row g-1">
-            {djangotopics.map((item, i) => (
+            {jframework.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <div className="topic-box">
                   • {item}
@@ -409,7 +412,7 @@ function FullstackPython() {
     </div>
     <div className="row mb-5 text-center">
       <div className="col">
-        <a href="../assets/docs/PYTHON_COURSE_CONTENT3D.pdf" download ><button className="btn btn-primary" >Download Cource Content</button></a>
+        <a href=""><button className="btn btn-primary">Download Cource Content</button></a>
       </div>
     </div>
     </div>
@@ -421,4 +424,4 @@ function FullstackPython() {
   );
 }
 
-export default FullstackPython;
+export default FullStackJava;
